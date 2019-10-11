@@ -15,13 +15,15 @@ public class ListConcurrence {
 		 */
 
 		/*
-		 * java.util.ConcurrentModificationException(并发修改异常) 
-		 * 解决list多线程并发修改异常: 
-		 * 1.newVector 
-		 * 2.Collections.synchronizedList(new ArrayList<>())
-		 * 3.new CopyOnWriteArrayList<String>()
+		 * List list = Arrays.asList("a","b","c"); list.forEach(System.out::println);
+		 */
+
+		/*
+		 * java.util.ConcurrentModificationException(并发修改异常) 解决list多线程并发修改异常:
+		 * 1.newVector 2.Collections.synchronizedList(new ArrayList<>()) 3.new
+		 * CopyOnWriteArrayList<String>()
 		 * 
-		 * Lambda表达式格式：拷贝小括号     固定小箭头     落地大括号
+		 * Lambda表达式格式：拷贝小括号 固定小箭头 落地大括号
 		 */
 
 		for (int i = 0; i < 30; i++) {
@@ -30,6 +32,7 @@ public class ListConcurrence {
 				System.out.println(list);
 			}, String.valueOf(i)).start();
 		}
+
 		/*
 		 * for (int i = 0; i < 30; i++) { new Thread(new Runnable() {
 		 * 
