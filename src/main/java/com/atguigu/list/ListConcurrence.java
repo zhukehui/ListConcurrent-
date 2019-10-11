@@ -23,7 +23,7 @@ public class ListConcurrence {
 		 * 解决list多线程并发修改异常:
 		 * 1.newVector 
 		 * 2.Collections.synchronizedList(new ArrayList<>()) 
-		 * 3.new  CopyOnWriteArrayList<String>()
+		 * 3.new  CopyOnWriteArrayList<String>()读写分离，写时复制
 		 * 
 		 * Lambda表达式格式：拷贝小括号 固定小箭头 落地大括号
 		 */
