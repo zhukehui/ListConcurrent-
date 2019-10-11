@@ -19,9 +19,11 @@ public class ListConcurrence {
 		 */
 
 		/*
-		 * java.util.ConcurrentModificationException(并发修改异常) 解决list多线程并发修改异常:
-		 * 1.newVector 2.Collections.synchronizedList(new ArrayList<>()) 3.new
-		 * CopyOnWriteArrayList<String>()
+		 * java.util.ConcurrentModificationException(并发修改异常) 
+		 * 解决list多线程并发修改异常:
+		 * 1.newVector 
+		 * 2.Collections.synchronizedList(new ArrayList<>()) 
+		 * 3.new  CopyOnWriteArrayList<String>()
 		 * 
 		 * Lambda表达式格式：拷贝小括号 固定小箭头 落地大括号
 		 */
